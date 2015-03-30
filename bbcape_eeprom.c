@@ -1,5 +1,8 @@
 /* 
 BBCape_EEPROM: BeagleBone Cape EEPRom Generator
+
+This source file has been modificated in order to have the EOS_Comm configuration by default.
+
 Copyright (c) 2013-2014 David Martínez Oliveira
 
 This file is part of BBCape_EEPROM
@@ -466,12 +469,12 @@ main (int argc, char *argv[])
   /* Set Header */
   set_eeprom_magic (&epr);
   set_eeprom_rev (&epr, "A1");
-  set_eeprom_bname (&epr, "BeagleBone NULLCape");
-  set_eeprom_version (&epr, "00A0");
-  set_eeprom_manufacturer (&epr,"picoFlamingo");
-  set_eeprom_part_number (&epr, "BB-NULLCape");
+  set_eeprom_bname (&epr, "EOS_Comm");
+  set_eeprom_version (&epr, "0001");
+  set_eeprom_manufacturer (&epr,"JuanCano/Nimbus");
+  set_eeprom_part_number (&epr, "20153");
   set_eeprom_n_pins (&epr, 0);
-  set_eeprom_serial_number (&epr, "2912WTHR0383");
+  set_eeprom_serial_number (&epr, "NULL");
   
   _dirty = 0;
   flag = 0;
